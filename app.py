@@ -46,7 +46,7 @@ with st.form("prediction_form"):
     fuel_type = st.selectbox("Type de carburant", ["Petrol", "Diesel", "CNG"])
     seller_type = st.selectbox("Type de vendeur", ["Dealer", "Individual"])
     transmission = st.selectbox("Transmission", ["Manual", "Automatic"])
-    owner = st.selectbox("Nombre de propriétaires précédents", [0, 1, 2, 3])
+    owner = st.selectbox("Nombre de propriétaires précédents", [0, 1, 3])
     submit = st.form_submit_button("Prédire le prix")
 
 if submit:
